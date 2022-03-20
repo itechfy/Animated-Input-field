@@ -1,0 +1,38 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+.inner-box{
+    position: relative;
+    margin:5px;
+}
+.inner-box input{
+    padding: 7px 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color:darkslategrey;
+    font-size: 0.7rem;
+}
+.inner-box input::placeholder{
+  font-size: 0.7rem;
+  transform: translateX(10px);
+}
+.inner-box input:focus::placeholder{
+    color:transparent;
+}
+.inner-box input:focus+p{
+ display: block;
+}
+.inner-box p{
+    position: absolute;
+    top:-14px;
+    left: 7px;
+    font-size: 0.6rem;
+    background-color: white;
+    padding: 0px 4px;
+    color:grey;
+    display: none;
+}
